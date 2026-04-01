@@ -1,5 +1,5 @@
 import cv2
-faceClassif = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+faceClassif = cv2.CascadeClassifier('../haarcascade_frontalface_default.xml')
 image = cv2.imread('oficina.png')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 faces = faceClassif.detectMultiScale(gray,
